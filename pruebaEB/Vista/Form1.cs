@@ -14,6 +14,7 @@ namespace pruebaEB
 
             var db = new DB();
             this.personaController = new PersonaController(db);
+            listTablePerson();
 
         }
 
@@ -21,6 +22,7 @@ namespace pruebaEB
         {
             var tablaPersonas = this.personaController.listPersonas();
             //haces referencia a la tabla del formulario
+            table_personas.DataSource = tablaPersonas;
             //le añades los datos
         }
 

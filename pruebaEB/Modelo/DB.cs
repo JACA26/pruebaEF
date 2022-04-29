@@ -15,7 +15,8 @@ namespace pruebaEB.Modelo
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=(localdb)\mssqllocaldb;Database=Blogging;Trusted_Connection=True");
+                @"Data Source = DESKTOP-9B888EI\SQLDEV;Database=ef_test; Integrated Security = True");
+                
         }
     }
 }
